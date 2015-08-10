@@ -1,0 +1,33 @@
+<div id="question">
+    
+</div>
+
+
+<%#<%= content_for :javascript do -%>
+  <script type="text/javascript">
+    $(function () {
+//      var div = $('<div></div>');
+//      div.html($('#bootstrap').text());
+//      var data = JSON.parse(div.text());
+
+            MIDI.loadPlugin({
+                onsuccess: function(){
+                        var question = new Kodaly.Models.Question({ id: 'test_question' });
+                       
+                        question.fetch({
+                           success: function(data){
+                              Kodaly.initialize();
+                              var view = new Kodaly.Views.Question({ model: question });
+                              view.render();
+                           } 
+                        });
+               },
+                       
+               
+
+           });
+        
+    });
+  </script>
+<%#<% end %>
+
