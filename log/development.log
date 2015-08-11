@@ -13061,3 +13061,2520 @@ Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 19
 
 
 Started GET "/assets/application-db113fe10fc25d2c3eaff8b4c1b3d385.js?body=1" for 192.168.56.1 at 2015-08-10 09:51:16 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:07:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 554ms (Views: 487.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:07:41 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:07:41 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:41 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:07:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/views/question-270221f998cc07f2c21e0c2c2db01975.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/choice/view-732b42c1e830916c63358d875385bae4.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/question/view-f27f30b4334f0d7ef21f9f1cfb9007a9.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/assets/application-4f53ed96eb363c855d6c4b0422376465.js?body=1" for 192.168.56.1 at 2015-08-10 22:07:42 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 332ms (Views: 330.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:57 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/views/question-270221f998cc07f2c21e0c2c2db01975.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/choice/view-055c85a5d357615c90389179998cc57e.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/question/view-f27f30b4334f0d7ef21f9f1cfb9007a9.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/assets/application-5060eb0119a7d27ea3ec19fcfba73581.js?body=1" for 192.168.56.1 at 2015-08-10 22:08:58 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:09:11 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 362ms (Views: 361.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/views/question-270221f998cc07f2c21e0c2c2db01975.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/question/view-f27f30b4334f0d7ef21f9f1cfb9007a9.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/assets/application-921f91629a019245b4ac659932a67e82.js?body=1" for 192.168.56.1 at 2015-08-10 22:09:12 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:14:19 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 410ms (Views: 408.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/views/question-270221f998cc07f2c21e0c2c2db01975.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/assets/application-ef340c990e68d809803af8ea806d28a6.js?body=1" for 192.168.56.1 at 2015-08-10 22:14:20 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 521ms (Views: 518.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:29 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/views/question-2a024a55dad23e25cbfd2f84c6971dcc.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/application-25fdcd859fe5953cc77333b95817f2ca.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:30 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 261ms (Views: 260.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/views/question-2a024a55dad23e25cbfd2f84c6971dcc.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/assets/application-25fdcd859fe5953cc77333b95817f2ca.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:37 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 360ms (Views: 359.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:40 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/views/question-2a024a55dad23e25cbfd2f84c6971dcc.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/application-25fdcd859fe5953cc77333b95817f2ca.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:18:41 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 396ms (Views: 395.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/views/question-a925f794f2dcc4c62b0e69a0c24e0ae5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:40 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:41 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:41 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:41 -0400
+
+
+Started GET "/assets/application-1d470efbc5e3f4c4070309a7b0ee7134.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:41 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 270ms (Views: 269.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/views/question-a925f794f2dcc4c62b0e69a0c24e0ae5.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/assets/application-1d470efbc5e3f4c4070309a7b0ee7134.js?body=1" for 192.168.56.1 at 2015-08-10 22:25:46 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:28:45 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 331ms (Views: 330.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/views/question-c15bfbbeb5ec629ea0bfde47186df9af.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/assets/application-0995733fcff8e28463194e6fe6c9b3f2.js?body=1" for 192.168.56.1 at 2015-08-10 22:28:46 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:35:08 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 416ms (Views: 414.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/views/question-4652824dcc4da0ec1cf620dba243ff2c.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/assets/application-518de701aa62c548e0b3dfd378c59907.js?body=1" for 192.168.56.1 at 2015-08-10 22:35:09 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 228ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/views/question-4652824dcc4da0ec1cf620dba243ff2c.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/assets/application-518de701aa62c548e0b3dfd378c59907.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:05 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:41:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 545ms (Views: 478.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/views/question-4652824dcc4da0ec1cf620dba243ff2c.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/assets/application-518de701aa62c548e0b3dfd378c59907.js?body=1" for 192.168.56.1 at 2015-08-10 22:41:52 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:44:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 4149ms (Views: 4124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/views/question-4652824dcc4da0ec1cf620dba243ff2c.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/application-518de701aa62c548e0b3dfd378c59907.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:44:12 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 632ms (Views: 631.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:01 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/views/question-e2c6dc7dd101e0f023cf50b03697fd3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/assets/application-11a8386d024930979809ab28a6fd2086.js?body=1" for 192.168.56.1 at 2015-08-10 22:50:02 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:52:00 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 727ms (Views: 725.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/views/question-58e9f695a8da3f1af0d9bec4fc4a30eb.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:01 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:02 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:02 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:02 -0400
+
+
+Started GET "/assets/application-ef7135ecf9b9559bad31bd8ecfc178a4.js?body=1" for 192.168.56.1 at 2015-08-10 22:52:02 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 415ms (Views: 413.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:06 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/views/question-73edeaff0802128920008647911a3002.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/assets/application-1007e3b8813f663fba205e64aee5314e.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:07 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:54:45 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 450ms (Views: 447.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/views/question-c87f7fdebfae13ec87a1896018ecb4c7.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/assets/application-d97e96e2508bf4636838f763c834f137.js?body=1" for 192.168.56.1 at 2015-08-10 22:54:46 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:55:43 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 413ms (Views: 410.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/views/question-2e5ce2c1ef7f3f7be78064137ef60b6c.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/assets/application-944d2570685c88867aa0acf91feaac50.js?body=1" for 192.168.56.1 at 2015-08-10 22:55:44 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 22:56:13 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 396ms (Views: 395.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/views/question-33ec90fd10ee15a59dbabfa22b92b132.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/assets/application-aa366e91c4dd81ffa6680ae71af3bcee.js?body=1" for 192.168.56.1 at 2015-08-10 22:56:14 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 370ms (Views: 368.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/views/question-ffea53c58732786d999908e4eaae242d.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:30 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:31 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:31 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:31 -0400
+
+
+Started GET "/assets/application-5dbebcd4d08a1582bb8ee49fbb280071.js?body=1" for 192.168.56.1 at 2015-08-10 23:01:31 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 23:02:38 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 401ms (Views: 398.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/views/question-94a751d1267ad5d66a66fdeeab5dd916.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/assets/application-7885d1165e8b2e33ecd17305f253d40a.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:39 -0400
+
+
+Started GET "/" for 192.168.56.1 at 2015-08-10 23:02:55 -0400
+Processing by QuestionController#show as HTML
+  Rendered question/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 363ms (Views: 360.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/application-6aba7b6421118fa76f874fe226d4f6d3.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/custom-93931c09fc5a34ab305dc593d563cdb3.css?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/Base64-6743f6e5dc396942d93c0d86c7adc0bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/MIDI-4dafbfbf2a6324504e2b08a97b4d8e0e.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/WebAudioAPI-482bdff50f27277f0d0b5c2bbed50bb9.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/WebMIDIAPI-e9edea0768de53d09a52df9c20073ae6.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/base64-binary-01ea5fe5059dab1e222f379133fd6198.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/stream-0c7debac5634cabac909d5a506bc98b4.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/midifile-d9dd9773c1e4b503af6df82b49d38457.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/replayer-abf8f7a39ad722db860ec6c1e3cc998f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/json2-fbe568ee489d7963875281c21f2b43d3.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-support/composite_view-c0991db77ed63a5f13d27241ca7796db.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-support/support-006d0d61f409146554257ec3edade216.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-393a840dc90861d7b4dc2b8ddb40420f.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-support/observer-c94e385ca35b0d9d77054a3f444ceb33.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-support/swapping_router-a535cb855de1130b753c27f3fa9863a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/backbone-support-7acb4f42a1b5aa9eece0284ebdaabe3e.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/kodaly-2de291c1ed023533ae2d2d48a9f8af24.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/models/choice-d36674016e47a285da31aa337b8c73ab.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/models/question-27f04d6621718d09e80d4a939edfb5a5.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/collections/choices-15a86798bc245f6313056cabf95decb3.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/views/choice-72b3f96d531787ce0a03b9b9540eb8dd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/views/question-359ed0f5105f5b9a2b7cf3b0080e2473.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/choice/view-3bdfd4814e133a38b32cfe32c38affba.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/routers/question-b6cec7f552d0d207c69f75cb424b65bb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/question/view-393a4878e718b4d13cc2449069118dfb.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
+
+
+Started GET "/assets/application-e8b73212ccb9e54e6afe1ebc0c7608a2.js?body=1" for 192.168.56.1 at 2015-08-10 23:02:56 -0400
