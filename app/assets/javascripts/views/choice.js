@@ -1,5 +1,5 @@
 Kodaly.Views.Choice = Backbone.View.extend({
-    tagname: 'li',
+    className: 'radio-inline',
     events: {
         'click .play' : 'play', 
     },
