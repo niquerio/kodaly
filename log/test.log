@@ -1,0 +1,683 @@
+  [1m[36m (32.9ms)[0m  [1mCREATE TABLE "answered_questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question_id" integer, "choice_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (5.6ms)[0m  CREATE TABLE "choices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "midi_blob" varchar, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (8.6ms)[0m  CREATE  INDEX "index_choices_on_question_id" ON "choices" ("question_id")
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "question_factories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (10.2ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "correct_choice_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "prompt" varchar) 
+  [1m[36m (8.1ms)[0m  [1mCREATE  INDEX "index_questions_on_correct_choice_id" ON "questions" ("correct_choice_id")[0m
+  [1m[35m (6.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (6.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150819133825')
+  [1m[36m (6.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150812003619')[0m
+  [1m[35m (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150811234029')
+  [1m[36m (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150811231945')[0m
+  [1m[35m (6.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150226182700')
+  [1m[36m (6.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150811232030')[0m
+  [1m[35m (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150819034654')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:36:01', '2015-08-21 00:36:01', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:36:01', '2015-08-21 00:36:01', 298486374)[0m
+  [1m[35m (14.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8759ms (Views: 8758.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:41:38', '2015-08-21 00:41:38', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:41:38', '2015-08-21 00:41:38', 298486374)[0m
+  [1m[35m (347.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 176ms (Views: 175.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:43:00', '2015-08-21 00:43:00', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:43:00', '2015-08-21 00:43:00', 298486374)[0m
+  [1m[35m (335.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 169ms (Views: 168.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:50:33', '2015-08-21 00:50:33', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:50:33', '2015-08-21 00:50:33', 298486374)[0m
+  [1m[35m (459.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35mQuestionFactory Load (0.1ms)[0m  SELECT  "question_factories".* FROM "question_factories"  ORDER BY "question_factories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 172ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:52:23', '2015-08-21 00:52:23', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:52:23', '2015-08-21 00:52:23', 298486374)[0m
+  [1m[35m (351.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 171ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35mQuestionFactory Load (0.2ms)[0m  SELECT  "question_factories".* FROM "question_factories"  ORDER BY "question_factories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:53:03', '2015-08-21 00:53:03', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 00:53:03', '2015-08-21 00:53:03', 298486374)[0m
+  [1m[35m (348.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 177ms (Views: 177.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35mQuestionFactory Load (0.2ms)[0m  SELECT  "question_factories".* FROM "question_factories"  ORDER BY "question_factories"."id" ASC LIMIT 1
+Processing by QuestionFactoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionFactory Load (0.2ms)[0m  [1mSELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 106ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:00:41', '2015-08-21 01:00:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:00:41', '2015-08-21 01:00:41', 298486374)[0m
+  [1m[35m (23.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 169ms (Views: 169.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+Processing by QuestionFactoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestionFactory Load (0.2ms)[0m  SELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 105ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:01:27', '2015-08-21 01:01:27', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:01:27', '2015-08-21 01:01:27', 298486374)[0m
+  [1m[35m (347.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 190ms (Views: 189.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:03:56', '2015-08-21 01:03:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:03:56', '2015-08-21 01:03:56', 298486374)[0m
+  [1m[35m (25.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 179ms (Views: 179.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bleh"], ["created_at", "2015-08-21 01:03:57.329353"], ["updated_at", "2015-08-21 01:03:57.329353"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by QuestionFactoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionFactory Load (0.2ms)[0m  [1mSELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 145ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:09:44', '2015-08-21 01:09:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:09:44', '2015-08-21 01:09:44', 298486374)[0m
+  [1m[35m (352.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bleh"], ["created_at", "2015-08-21 01:09:45.209566"], ["updated_at", "2015-08-21 01:09:45.209566"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("correct_choice_id", "prompt", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["correct_choice_id", 1], ["prompt", "Which is So Mi?"], ["created_at", "2015-08-21 01:09:45.271802"], ["updated_at", "2015-08-21 01:09:45.271802"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "blahblahlblah"], ["question_id", 1], ["created_at", "2015-08-21 01:09:45.320222"], ["updated_at", "2015-08-21 01:09:45.320222"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by QuestionFactoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionFactory Load (0.2ms)[0m  [1mSELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 90ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 183ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:11:07', '2015-08-21 01:11:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:11:07', '2015-08-21 01:11:07', 298486374)[0m
+  [1m[35m (348.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-21 01:11:08.004687"], ["updated_at", "2015-08-21 01:11:08.004687"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("correct_choice_id", "prompt", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["correct_choice_id", 1], ["prompt", "Which is So Mi?"], ["created_at", "2015-08-21 01:11:08.063666"], ["updated_at", "2015-08-21 01:11:08.063666"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "blahblahlblah"], ["question_id", 1], ["created_at", "2015-08-21 01:11:08.120931"], ["updated_at", "2015-08-21 01:11:08.120931"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by QuestionFactoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionFactory Load (0.2ms)[0m  [1mSELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+Completed 406 Not Acceptable in 182ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 186ms (Views: 185.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:15:08', '2015-08-21 01:15:08', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:15:08', '2015-08-21 01:15:08', 298486374)[0m
+  [1m[35m (321.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 167ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-21 01:15:09.457204"], ["updated_at", "2015-08-21 01:15:09.457204"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("correct_choice_id", "prompt", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["correct_choice_id", 1], ["prompt", "Which is So Mi?"], ["created_at", "2015-08-21 01:15:09.553093"], ["updated_at", "2015-08-21 01:15:09.553093"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "blahblahlblah"], ["question_id", 1], ["created_at", "2015-08-21 01:15:09.564654"], ["updated_at", "2015-08-21 01:15:09.564654"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:16:06', '2015-08-21 01:16:06', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 01:16:06', '2015-08-21 01:16:06', 298486374)[0m
+  [1m[35m (211.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------
+HomeControllerTest: test_should_get_show
+----------------------------------------
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 175ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------
+QuestionFactoriesControllerTest: test_should_get_show
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-21 01:16:07.234646"], ["updated_at", "2015-08-21 01:16:07.234646"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("correct_choice_id", "prompt", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["correct_choice_id", 1], ["prompt", "Which is So Mi?"], ["created_at", "2015-08-21 01:16:07.330564"], ["updated_at", "2015-08-21 01:16:07.330564"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "blahblahlblah"], ["question_id", 1], ["created_at", "2015-08-21 01:16:07.341290"], ["updated_at", "2015-08-21 01:16:07.341290"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by QuestionFactoriesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestionFactory Load (0.1ms)[0m  [1mSELECT  "question_factories".* FROM "question_factories" WHERE "question_factories"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mChoice Load (0.2ms)[0m  [1mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 1]]
+  Rendered question_factories/show.json.jbuilder (54.5ms)
+Completed 200 OK in 248ms (Views: 60.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 13:16:27', '2015-08-21 13:16:27', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-21 13:16:27', '2015-08-21 13:16:27', 298486374)[0m
+  [1m[35m (24.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-21 13:16:27.766012"], ["updated_at", "2015-08-21 13:16:27.766012"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:24:41', '2015-08-22 23:24:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:24:41', '2015-08-22 23:24:41', 298486374)[0m
+  [1m[35m (24.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:27:17', '2015-08-22 23:27:17', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:27:17', '2015-08-22 23:27:17', 298486374)[0m
+  [1m[35m (31.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:28:12', '2015-08-22 23:28:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:28:12', '2015-08-22 23:28:12', 298486374)[0m
+  [1m[35m (36.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-22 23:28:12.400433"], ["updated_at", "2015-08-22 23:28:12.400433"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-22 23:28:12.531212"], ["updated_at", "2015-08-22 23:28:12.531212"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:32:18', '2015-08-22 23:32:18', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-22 23:32:18', '2015-08-22 23:32:18', 298486374)[0m
+  [1m[35m (341.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-22 23:32:19.203209"], ["updated_at", "2015-08-22 23:32:19.203209"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-22 23:32:19.319822"], ["updated_at", "2015-08-22 23:32:19.319822"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-23 00:00:20', '2015-08-23 00:00:20', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-23 00:00:20', '2015-08-23 00:00:20', 298486374)[0m
+  [1m[35m (33.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-23 00:00:20.392934"], ["updated_at", "2015-08-23 00:00:20.392934"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-23 00:00:20.518635"], ["updated_at", "2015-08-23 00:00:20.518635"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (5.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 13:40:27', '2015-08-24 13:40:27', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 13:40:27', '2015-08-24 13:40:27', 298486374)[0m
+  [1m[35m (349.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_choice,_which_is_one_of_the_associated_choices
+-----------------------------------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-24 13:40:27.970540"], ["updated_at", "2015-08-24 13:40:27.970540"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 13:40:28.025618"], ["updated_at", "2015-08-24 13:40:28.025618"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.072852"], ["updated_at", "2015-08-24 13:40:28.072852"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 1], ["updated_at", "2015-08-24 13:40:28.075273"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAxf4NggDF/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.132205"], ["updated_at", "2015-08-24 13:40:28.132205"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mChoice Load (0.2ms)[0m  [1mSELECT  "choices".* FROM "choices" WHERE "choices"."question_id" = ? LIMIT 1[0m  [["question_id", 1]]
+  [1m[35mChoice Load (0.2ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "so_mi_1"], ["created_at", "2015-08-24 13:40:28.269371"], ["updated_at", "2015-08-24 13:40:28.269371"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 13:40:28.271944"], ["updated_at", "2015-08-24 13:40:28.271944"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAzf4NggDN/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.274233"], ["updated_at", "2015-08-24 13:40:28.274233"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?[0m  [["correct_choice_id", 1], ["updated_at", "2015-08-24 13:40:28.275487"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.276639"], ["updated_at", "2015-08-24 13:40:28.276639"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_more_than_one_associated_choices
+-------------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-24 13:40:28.278594"], ["updated_at", "2015-08-24 13:40:28.278594"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 13:40:28.281011"], ["updated_at", "2015-08-24 13:40:28.281011"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA1f4NggDV/AJAyf4NggDJ/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.282887"], ["updated_at", "2015-08-24 13:40:28.282887"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 1], ["updated_at", "2015-08-24 13:40:28.284060"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA1f4NggDV/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 13:40:28.285474"], ["updated_at", "2015-08-24 13:40:28.285474"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 20:39:23', '2015-08-24 20:39:23', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 20:39:23', '2015-08-24 20:39:23', 298486374)[0m
+  [1m[35m (24.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:39:24.051428"], ["updated_at", "2015-08-24 20:39:24.051428"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:39:24.109486"], ["updated_at", "2015-08-24 20:39:24.109486"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAzf4NggDN/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.156794"], ["updated_at", "2015-08-24 20:39:24.156794"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 1], ["updated_at", "2015-08-24 20:39:24.158617"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.204510"], ["updated_at", "2015-08-24 20:39:24.204510"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_choice,_which_is_one_of_the_associated_choices
+-----------------------------------------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:39:24.207349"], ["updated_at", "2015-08-24 20:39:24.207349"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:39:24.208923"], ["updated_at", "2015-08-24 20:39:24.208923"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA8f4NggDx/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.210754"], ["updated_at", "2015-08-24 20:39:24.210754"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA8f4NggDx/AJA5f4NggDl/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.212456"], ["updated_at", "2015-08-24 20:39:24.212456"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 2], ["updated_at", "2015-08-24 20:39:24.213623"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChoice Load (0.2ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."question_id" = ? LIMIT 1  [["question_id", 1]]
+  [1m[36mChoice Load (0.1ms)[0m  [1mSELECT  "choices".* FROM "choices" WHERE "choices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_more_than_one_associated_choices
+-------------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:39:24.353197"], ["updated_at", "2015-08-24 20:39:24.353197"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:39:24.355153"], ["updated_at", "2015-08-24 20:39:24.355153"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA3f4NggDd/AJA0f4NggDR/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.357192"], ["updated_at", "2015-08-24 20:39:24.357192"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 1], ["updated_at", "2015-08-24 20:39:24.358511"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA3f4NggDd/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.359963"], ["updated_at", "2015-08-24 20:39:24.359963"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+AnsweredQuestionTest: test_answered_question_should_return_correct_result
+-------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "I am a prompt"], ["created_at", "2015-08-24 20:39:24.364816"], ["updated_at", "2015-08-24 20:39:24.364816"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "awlfkja;wlfekja;welfajw;eoij"], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.366378"], ["updated_at", "2015-08-24 20:39:24.366378"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "awlfkja;wlfekja;welfajw;eoij"], ["question_id", 1], ["created_at", "2015-08-24 20:39:24.367630"], ["updated_at", "2015-08-24 20:39:24.367630"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 2], ["updated_at", "2015-08-24 20:39:24.368849"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChoice Load (0.1ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mChoice Load (0.0ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."question_id" = ? LIMIT 1  [["question_id", 1]]
+self.choice: #<Choice id: 2, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:39:24", updated_at: "2015-08-24 20:39:24"> self.question.correct_choice: #<Choice id: 1, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:39:24", updated_at: "2015-08-24 20:39:24">
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 20:53:07', '2015-08-24 20:53:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-02-26 13:27:00.000000', '2015-08-24 20:53:07', '2015-08-24 20:53:07', 298486374)[0m
+  [1m[35m (64.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------
+AnsweredQuestionTest: test_answered_question_should_return_correct_result
+-------------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "I am a prompt"], ["created_at", "2015-08-24 20:53:07.588089"], ["updated_at", "2015-08-24 20:53:07.588089"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "awlfkja;wlfekja;welfajw;eoij"], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.682657"], ["updated_at", "2015-08-24 20:53:07.682657"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "awlfkja;wlfekja;welfajw;eoij"], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.685065"], ["updated_at", "2015-08-24 20:53:07.685065"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mChoice Load (0.2ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."question_id" = ? LIMIT 1  [["question_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "choices" SET "question_id" = ?, "updated_at" = ? WHERE "choices"."id" = ?[0m  [["question_id", nil], ["updated_at", "2015-08-24 20:53:07.742542"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+self.choice: #<Choice id: 2, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:53:07", updated_at: "2015-08-24 20:53:07"> self.question.correct_choice: #<Choice id: 2, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:53:07", updated_at: "2015-08-24 20:53:07">
+self.choice: #<Choice id: 1, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:53:07", updated_at: "2015-08-24 20:53:07"> self.question.correct_choice: #<Choice id: 2, midi_blob: "awlfkja;wlfekja;welfajw;eoij", question_id: 1, created_at: "2015-08-24 20:53:07", updated_at: "2015-08-24 20:53:07">
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_choice,_which_is_one_of_the_associated_choices
+-----------------------------------------------------------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:53:07.907416"], ["updated_at", "2015-08-24 20:53:07.907416"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:53:07.909595"], ["updated_at", "2015-08-24 20:53:07.909595"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA3f4NggDd/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.911630"], ["updated_at", "2015-08-24 20:53:07.911630"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA3f4NggDd/AJA0f4NggDR/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.913143"], ["updated_at", "2015-08-24 20:53:07.913143"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 2], ["updated_at", "2015-08-24 20:53:07.914446"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mChoice Load (0.1ms)[0m  SELECT  "choices".* FROM "choices" WHERE "choices"."question_id" = ? LIMIT 1  [["question_id", 1]]
+  [1m[36mChoice Load (0.1ms)[0m  [1mSELECT  "choices".* FROM "choices" WHERE "choices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_correct_prompt
+-------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:53:07.923235"], ["updated_at", "2015-08-24 20:53:07.923235"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:53:07.926514"], ["updated_at", "2015-08-24 20:53:07.926514"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAzf4NggDN/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.928183"], ["updated_at", "2015-08-24 20:53:07.928183"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 1], ["updated_at", "2015-08-24 20:53:07.929784"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA2f4NggDZ/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.931859"], ["updated_at", "2015-08-24 20:53:07.931859"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------
+QuestionFactoryTest: test_Question_should_have_more_than_one_associated_choices
+-------------------------------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "question_factories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "so_mi_1"], ["created_at", "2015-08-24 20:53:07.934016"], ["updated_at", "2015-08-24 20:53:07.934016"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("prompt", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["prompt", "Which is So Mi?"], ["created_at", "2015-08-24 20:53:07.935290"], ["updated_at", "2015-08-24 20:53:07.935290"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA8f4NggDx/AJAwf4NggDB/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.939305"], ["updated_at", "2015-08-24 20:53:07.939305"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "choices" ("midi_blob", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["midi_blob", "data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJA8f4NggDx/AJA5f4NggDl/AP8vAA=="], ["question_id", 1], ["created_at", "2015-08-24 20:53:07.941096"], ["updated_at", "2015-08-24 20:53:07.941096"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "questions" SET "correct_choice_id" = ?, "updated_at" = ? WHERE "questions"."id" = ?  [["correct_choice_id", 2], ["updated_at", "2015-08-24 20:53:07.944141"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "choices" WHERE "choices"."question_id" = ?  [["question_id", 1]]
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m

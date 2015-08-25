@@ -1,6 +1,6 @@
 Kodaly.Models.Choice = Backbone.Model.extend({
     defaults: {
-        name: '',
+        id: '',
         midi_blob: '',
     },
     initialize: function(){

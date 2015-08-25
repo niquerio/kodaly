@@ -1,8 +1,9 @@
 Kodaly.Models.Question = Backbone.Model.extend({
     defaults: {
-        title: 'Question',
+        prompt: 'Question',
+        choices: new Object,
     },
     initialize: function(){
     },
-    urlRoot: "/test/",
+    urlRoot: "/question_factories/",
 });

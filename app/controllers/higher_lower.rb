@@ -12,7 +12,6 @@ $LOAD_PATH[0, 0] = File.join(File.dirname(__FILE__), '..', 'lib')
 
 require 'midilib/sequence'
 require 'midilib/consts'
-require 'base64'
 include MIDI
 
 seq = Sequence.new()
@@ -22,14 +21,14 @@ seq = Sequence.new()
 track = Track.new(seq)
 seq.tracks << track
 track.events << Tempo.new(Tempo.bpm_to_mpq(60))
-track.events << MetaEvent.new(META_SEQ_NAME, 'Exercise')
+track.events << MetaEvent.new(META_SEQ_NAME, 'Sequence Name')
 
 # Create a track to hold the notes. Add it to the sequence.
 track = Track.new(seq)
 seq.tracks << track
 
 # Give the track a name and an instrument name (optional).
-track.name = 'Exercise'
+#track.name = 'My New Track'
 track.instrument = GM_PATCH_NAMES[0]
 
 # Add a volume controller event (optional).
@@ -41,7 +40,7 @@ track.events << Controller.new(0, CC_VOLUME, 127)
 # delta time length of a single quarter note.
 track.events << ProgramChange.new(0, 0, 0)
 quarter_note_length = seq.note_to_delta('quarter')
-[7, 4].each do |offset|
+[4, 7].each do |offset|
   track.events << NoteOn.new(0, 64 + offset, 127, 0)
   track.events << NoteOff.new(0, 64 + offset, 127, quarter_note_length)
 end
@@ -52,7 +51,4 @@ end
 
 # track.recalc_times
 
-File.open('bleh.mid', 'wb') { |file| seq.write(file) }
-content = File.binread('bleh.mid')
-encoded = Base64.encode64(content).gsub(/\s+/, "");
-puts "'d' : 'data:audio/midi;base64,#{encoded}'"
+File.open('higher_lower.mid', 'wb') { |file| seq.write(file) }

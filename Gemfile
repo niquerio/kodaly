@@ -21,6 +21,7 @@ gem 'ejs'
 gem 'backbone-support'
 gem "json2-rails"
 gem 'midilib', '~> 2.0.5'
+gem 'marionette-rails', '~> 2.4.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,7 +47,7 @@ group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
   gem 'rspec-rails', '~>2.13.0'
-  gem 'jasmine', '~> 1.3.2'
+  gem 'jasmine', '~> 2.3.0'
   gem 'cucumber-rails', '~> 1.4.2', :require => false
 
 
@@ -60,7 +61,7 @@ end
 group :test do
   gem 'turn', :require => false
   gem "capybara", "~> 2.1.0"
-  gem "selenium-webdriver", "~> 2.31.0"
+  gem 'selenium-webdriver', '~> 2.47.1'
   gem "capybara-webkit", "~> 0.14.2"
   gem "factory_girl_rails", "~> 4.2.1"
   gem "bourne"

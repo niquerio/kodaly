@@ -3,18 +3,22 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
+
+  get 'app/check_answer', to: 'answered_questions#create'
+
+
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
+  resources :question_factories, only: [:show],  defaults: {format: :json}
 
-  #root to: "home#show"
-  root to: "question#show"
+  root to: "home#show"
 end
 #Rails.application.routes.draw do
+
 #  get 'sessions/create'
 
 #  get 'sessions/destroy'
 
-#  get 'home/show'
 
 
 

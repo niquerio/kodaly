@@ -1,26 +1,42 @@
-Kodaly.Views.Question = Backbone.View.extend({
+Kodaly.Views.Question = Marionette.CompositeView.extend({
     el: '#question',
+    template: 'question/view',
+    childView: Kodaly.Views.Choice,
+    childViewContainer: ".form-group",
     events: {
         "click .submit-answer" : "submit",
         "click .get-next-question" : "nextQuestion",
     },
     initialize: function(){
         //Turn choices into collection of choices
-        this.choices = new Kodaly.Collections.Choices
+        if(!this.collection){
+          this.collection = new Kodaly.Collections.Choices
+        }
+        name = 'A'
         for( var key in this.model.get('choices')){
-            this.choices.add({'name': key, 'midi_blob': this.model.attributes.choices[key]});
+            var choice = this.model.attributes.choices[key];
+            choice.name = name;
+            this.collection.add(choice);
+            name = String.fromCharCode(name.charCodeAt() + 1)
             
         }
     },
     submit: function(event){
         event && event.preventDefault(); 
         var selected = $('input[name=choice]:checked', '#choice-list').val()
+            var answered_question = {
+               "answered_question": { 
+                "question_id": this.model.get('id'),
+                "choice_id": selected
+               }
+            };
+            
         var self = this;
         if(!selected){
             var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Select Something!');
             this.$el.prepend(alert)
         }else{
-            $.getJSON("test/answer", selected, function(data){
+            $.getJSON("app/check_answer", answered_question, function(data){
                 if(data.correct){
                    var alert = $('<div>').addClass("alert alert-success").attr('role',"alert").html('Correct!');
                    self.$el.append(alert)
@@ -36,18 +52,15 @@ Kodaly.Views.Question = Backbone.View.extend({
     },
     nextQuestion: function(){
         event && event.preventDefault(); 
-        alert('Next Question!');
-    },
-    render: function() {
-        this.$el.html(JST['question/view']({ model: this.model }));
-        this.renderChoices();
-        return this;
-    },
-    renderOneChoice: function(choice){
-        var view = new Kodaly.Views.Choice({ model: choice});
-        $('.form-group').append(view.render().el);
-    },
-    renderChoices: function(){
-       this.choices.each(this.renderOneChoice, this); 
+        this.collection.reset();
+        this.model.set('id',1);
+        var self = this;
+        this.model.fetch({
+           success: function(data){
+              self.model = data;
+              self.initialize();
+              self.render();
+           } 
+        });
     },
 });
