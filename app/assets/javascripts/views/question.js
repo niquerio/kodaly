@@ -26,7 +26,7 @@ Kodaly.Views.Question = Marionette.CompositeView.extend({
         var selected = $('input[name=choice]:checked', '#choice-list').val()
             var answered_question = {
                "answered_question": { 
-                "question_id": this.model.get('id'),
+                "user_id": Kodaly.user.get("id"),
                 "choice_id": selected
                }
             };
@@ -46,6 +46,7 @@ Kodaly.Views.Question = Marionette.CompositeView.extend({
                 }
                 $('.form-group').wrap("<fieldset disabled></fieldset>");
                 $('.submit-answer').removeClass("submit-answer").addClass('get-next-question').html('Next Question');
+               Kodaly.user.fetch();
             }
                     
         )}

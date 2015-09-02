@@ -8,22 +8,32 @@ window.Kodaly =  (function(){
       Collections: {},
       Views: {},
       Routers: {},
+      Controllers: {},
     
     });
     var app = new Application();
 
-      app.addRegions({
-          body: '[data-region=body]',
-      });
+    var RootView = Marionette.LayoutView.extend({
+      regions: {
+        body: '[data-region=body]',
+      }
+    });
+
+    app.rootView = new RootView
+
+    app.addRegions({
+    });
 
 
-      app.on('start', function(){
-        var router = new Kodaly.Routers.Main();
+    app.on('start', function(){
+      var router = new Kodaly.Routers.Main();
+      var lessonsRouter = new Kodaly.Routers.Lessons({controller: Kodaly.Controllers.Lessons});
+        
 
-        Backbone.history.start();
-      });
+      Backbone.history.start();
+    });
 
-      return app;
+    return app;
 })();
 
 
