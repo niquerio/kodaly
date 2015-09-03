@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
+  resources :users, only: [:show],  defaults: {format: :json}
   resources :question_factories, only: [:show],  defaults: {format: :json}
 
   root to: "home#show"

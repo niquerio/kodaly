@@ -1,9 +1,10 @@
 class AnsweredQuestion < ActiveRecord::Base
-    belongs_to :question
-    belongs_to :choice
-    belongs_to :user
+  belongs_to :question_factory
+  belongs_to :choice
+  belongs_to :user
+  
 
-    def is_choice_correct
-      return self.choice === self.question.correct_choice
-    end
+  def is_choice_correct
+    return self.choice.correct
+  end
 end

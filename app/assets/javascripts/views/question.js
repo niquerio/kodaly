@@ -8,18 +8,21 @@ Kodaly.Views.Question = Marionette.CompositeView.extend({
         "click .get-next-question" : "nextQuestion",
     },
     initialize: function(){
+        this.collection = null;
+        this.collection = this.model.get('choices');
+        
         //Turn choices into collection of choices
-        if(!this.collection){
-          this.collection = new Kodaly.Collections.Choices
-        }
-        name = 'A'
-        for( var key in this.model.get('choices')){
-            var choice = this.model.attributes.choices[key];
-            choice.name = name;
-            this.collection.add(choice);
-            name = String.fromCharCode(name.charCodeAt() + 1)
-            
-        }
+//        if(!this.collection){
+//          this.collection = new Kodaly.Collections.Choices
+//        }
+//        name = 'A'
+//        for( var key in this.model.get('choices')){
+//            var choice = this.model.attributes.choices[key];
+//            choice.name = name;
+//            this.collection.add(choice);
+//            name = String.fromCharCode(name.charCodeAt() + 1)
+//            
+//        }
     },
     submit: function(event){
         event && event.preventDefault(); 
@@ -53,15 +56,18 @@ Kodaly.Views.Question = Marionette.CompositeView.extend({
     },
     nextQuestion: function(){
         event && event.preventDefault(); 
-        this.collection.reset();
-        this.model.set('id',1);
-        var self = this;
-        this.model.fetch({
-           success: function(data){
-              self.model = data;
-              self.initialize();
-              self.render();
-           } 
-        });
+        this.model = Kodaly.request('newQuestion:entities',1)
+        this.initialize();
+        this.render();
+        //this.collection.reset();
+        //this.model.set('id',1);
+        //var self = this;
+        //this.model.fetch({
+        //   success: function(data){
+        //      self.model = data;
+        //      self.initialize();
+        //      self.render();
+        //   } 
+        //});
     },
 });

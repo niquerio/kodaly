@@ -5,10 +5,6 @@ Kodaly.Views.Choice = Marionette.ItemView.extend({
     },
     template: 'choice/view',
     
-    //render: function() {
-    //    this.$el.html(JST['choice/view']({ model: this.model }));
-    //    return this;
-    //},
     play: function(){
        MIDI.Player.loadFile(this.model.get('midi_blob'), function(){
            MIDI.Player.resume();

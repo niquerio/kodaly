@@ -11,21 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150819133825) do
+ActiveRecord::Schema.define(version: 20150827181644) do
 
   create_table "answered_questions", force: :cascade do |t|
-    t.integer  "question_id"
     t.integer  "choice_id"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "question_factory_id"
   end
+
+  add_index "answered_questions", ["question_factory_id"], name: "index_answered_questions_on_question_factory_id"
 
   create_table "choices", force: :cascade do |t|
     t.string   "midi_blob"
     t.integer  "question_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "order"
+    t.boolean  "correct"
   end
 
   add_index "choices", ["question_id"], name: "index_choices_on_question_id"
@@ -37,13 +41,13 @@ ActiveRecord::Schema.define(version: 20150819133825) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.integer  "correct_choice_id"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.string   "prompt"
+    t.integer  "question_factory_id"
   end
 
-  add_index "questions", ["correct_choice_id"], name: "index_questions_on_correct_choice_id"
+  add_index "questions", ["question_factory_id"], name: "index_questions_on_question_factory_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"

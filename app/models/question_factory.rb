@@ -13,7 +13,7 @@ class QuestionFactory < ActiveRecord::Base
 
 private
   def so_mi_1
-    question = Question.create(prompt: "Which is So Mi?")
+    question = Question.create(prompt: "Which is So Mi?", question_factory: self)
     
     wrong_interval = [0,1,2,5,6,7,8,9,10,11,12].sample
     max_interval = ''
@@ -31,17 +31,12 @@ private
     correct_midi_blob = generate_midi(correct_notes)
     incorrect_midi_blob = generate_midi(incorrect_notes)
 
-    
-    if [true, false].sample 
-      question.update(correct_choice: Choice.create(midi_blob: correct_midi_blob, question: question))
-      Choice.create(midi_blob: incorrect_midi_blob, question: question)
-    else
-      Choice.create(midi_blob: incorrect_midi_blob, question: question)
-      question.update(correct_choice: Choice.create(midi_blob: correct_midi_blob, question: question))
-    end
-    
+    order = [0,1].shuffle
+    Choice.create(midi_blob: correct_midi_blob, question: question, order:order.pop, correct:true)
+    Choice.create(midi_blob: incorrect_midi_blob, question: question, order:order.pop,correct:false)
     
     return question
+
   end
 
   def generate_midi (notes, name='Exercise', tempo=60)

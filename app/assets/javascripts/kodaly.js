@@ -14,23 +14,23 @@ window.Kodaly =  (function(){
     var app = new Application();
 
     var RootView = Marionette.LayoutView.extend({
+      el: "#app-container",
       regions: {
         body: '[data-region=body]',
       }
     });
 
-    app.rootView = new RootView
+    app.regions = new RootView();
 
-    app.addRegions({
-    });
 
 
     app.on('start', function(){
-      var router = new Kodaly.Routers.Main();
-      var lessonsRouter = new Kodaly.Routers.Lessons({controller: Kodaly.Controllers.Lessons});
-        
+      Kodaly.QuestionApp.Show.Controller.showQuestion();
+      //var router = new Kodaly.Routers.Main();
+      //var lessonsRouter = new Kodaly.Routers.Lessons({controller: Kodaly.Controllers.Lessons});
+      //  
 
-      Backbone.history.start();
+      //Backbone.history.start();
     });
 
     return app;
@@ -38,13 +38,4 @@ window.Kodaly =  (function(){
 
 
 
-//{
-//  initialize: function() {
-//      this.app = new this.Application();
-//  },
-//};
-//
-//(function(){
-//    Kodaly.initialize();
-//})();
 

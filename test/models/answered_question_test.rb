@@ -3,12 +3,12 @@ require 'test_helper'
 class AnsweredQuestionTest < ActiveSupport::TestCase
   def setup
     @question = Question.create(prompt: "I am a prompt")
-    @choice1 = Choice.create(midi_blob: "awlfkja;wlfekja;welfajw;eoij", question:@question)
-    @choice2 = Choice.create(midi_blob: "awlfkja;wlfekja;welfajw;eoij", question:@question)
-    @question.update(correct_choice: @choice2)
+    @choice1 = Choice.create(midi_blob: "awlfkja;wlfekja;welfajw;eoij", question:@question, correct:false, order:0)
+    @choice2 = Choice.create(midi_blob: "awlfkja;wlfekja;welfajw;eoij", question:@question, correct:true, order:1)
+    @user = User.create(name: "Name")
 
-    @wrong_answer = AnsweredQuestion.new(choice: @choice1, question:@question)
-    @correct_answer = AnsweredQuestion.new(choice: @choice2, question:@question)
+    @wrong_answer = AnsweredQuestion.new(choice: @choice1, user: @user)
+    @correct_answer = AnsweredQuestion.new(choice: @choice2, user: @user)
     
   end
 
@@ -16,4 +16,5 @@ class AnsweredQuestionTest < ActiveSupport::TestCase
       assert @correct_answer.is_choice_correct
       refute @wrong_answer.is_choice_correct
   end 
+
 end
