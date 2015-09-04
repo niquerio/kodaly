@@ -37,31 +37,28 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
                 "choice_id": selected
                }
             };
-            
-        var self = this;
         if(!selected){
             var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Select Something!');
             this.$el.prepend(alert)
         }else{
-            $.getJSON("app/check_answer", answered_question, function(data){
-                if(data.correct){
-                   var alert = $('<div>').addClass("alert alert-success").attr('role',"alert").html('Correct!');
-                   self.$el.append(alert)
-                }else{
-                   var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Incorrect!');
-                   self.$el.append(alert)
-                }
-                $('.form-group').wrap("<fieldset disabled></fieldset>");
-                $('.submit-answer').removeClass("submit-answer").addClass('get-next-question').html('Next Question');
-            }
-                    
-        )}
+            this.trigger('question:submit',answered_question);    
+       }
     },
+    onQuestionResult: function(data){ 
+      if(data.correct){
+         var alert = $('<div>').addClass("alert alert-success").attr('role',"alert").html('Correct!');
+         this.$el.append(alert)
+      }else{
+         var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Incorrect!');
+         this.$el.append(alert)
+      }
+      $('.form-group').wrap("<fieldset disabled></fieldset>");
+      $('.submit-answer').removeClass("submit-answer").addClass('get-next-question').html('Next Question');
+    },
+
     nextQuestion: function(){
         event && event.preventDefault(); 
-        this.model = Kodaly.request('newQuestion:entities',1)
-        this.initialize();
-        this.render();
+        this.trigger('question:new');    
     },
-});
+  });
 });

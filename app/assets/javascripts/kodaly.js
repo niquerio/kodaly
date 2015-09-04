@@ -3,15 +3,7 @@ Marionette.Renderer.render = function(template, data){
 };
 
 window.Kodaly =  (function(){
-    var Application = Marionette.Application.extend({
-      Models: {},
-      Collections: {},
-      Views: {},
-      Routers: {},
-      Controllers: {},
-    
-    });
-    var app = new Application();
+    var app = new Marionette.Application();
 
     var RootView = Marionette.LayoutView.extend({
       el: "#app-container",
@@ -26,11 +18,6 @@ window.Kodaly =  (function(){
 
     app.on('start', function(){
       Kodaly.QuestionApp.Show.Controller.showQuestion();
-      //var router = new Kodaly.Routers.Main();
-      //var lessonsRouter = new Kodaly.Routers.Lessons({controller: Kodaly.Controllers.Lessons});
-      //  
-
-      //Backbone.history.start();
     });
 
     return app;
