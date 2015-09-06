@@ -60,5 +60,10 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
         event && event.preventDefault(); 
         this.trigger('question:new');    
     },
+    onQuestionRerender: function(model){
+      this.model = model;
+      this.initialize();
+      this.render();
+    },
   });
 });

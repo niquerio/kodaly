@@ -30,24 +30,33 @@ Kodaly.module("Entities", function(Entities, Kodaly, Backbone, Marionette, $, _)
   
   var question;
 
-  var init_question = function(){
-    question = new Entities.Question(
-    {"prompt":"Which is So Mi?",
-      "id":216,
-      "choices":[
-        {"midi_blob":"data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAyf4NggDJ/AP8vAA==",
-        "id":429},
-        {"midi_blob":"data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAwf4NggDB/AP8vAA==","id":428}]}
-    );
-  }
+  //var init_question = function(){
+  //  {"prompt":"Which is So Mi?",
+  //    "id":216,
+  //    "choices":[
+  //      {"midi_blob":"data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAyf4NggDJ/AP8vAA==",
+  //      "id":429},
+  //      {"midi_blob":"data:;base64,TVRoZAAAAAYAAQACAeBNVHJrAAAAGwD/BAAA/1EDD0JAAP8DCEV4ZXJjaXNlAP8vAE1UcmsAAAAuAP8EFEFjb3VzdGljIEdyYW5kIFBpYW5vAJAzf4NggDN/AJAwf4NggDB/AP8vAA==","id":428}]}
+  //  );
+  //}
   
   var API = {
     getNewQuestionEntities: function(question_factory_id){
+      var question = new Entities.Question({id:question_factory_id});
+      var defer = $.Deferred();
+      question.fetch({
+        success: function(data){
+          data.initialize();
+          defer.resolve(data);
+        }
+      }); 
+      var promise = defer.promise();
+      return promise;
       //problem is that fetch is too slow. :(
-      if(question === undefined){
-        init_question();
-      }
-      return question;
+      //if(question === undefined){
+      //  init_question();
+      //}
+      //return question;
     }
   }
 
