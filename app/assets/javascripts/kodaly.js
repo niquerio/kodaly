@@ -5,6 +5,15 @@ Marionette.Renderer.render = function(template, data){
 window.Kodaly =  (function(){
     var app = new Marionette.Application();
 
+    app.navigate = function(route,  options){
+      options || (options = {});
+      Backbone.history.navigate(route, options);
+    };
+    
+    app.getCurrentRoute = function(){
+      return Backbone.history.fragment
+    };
+
     var RootView = Marionette.LayoutView.extend({
       el: "#app-container",
       regions: {
@@ -17,7 +26,15 @@ window.Kodaly =  (function(){
 
 
     app.on('start', function(){
-      Kodaly.QuestionApp.Show.Controller.showQuestion();
+      if(Backbone.history){
+        if(!Backbone.history.started){
+          Backbone.history.start();
+          Backbone.history.started = true;
+        }
+        if(this.getCurrentRoute() === ""){
+          Kodaly.trigger("lessons:list");
+        }
+      }
     });
 
     return app;

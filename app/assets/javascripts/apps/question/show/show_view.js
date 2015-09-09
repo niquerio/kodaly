@@ -6,6 +6,7 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
         'click .play' : 'play', 
     },
     template: 'choice/view',
+
     
     play: function(){
        MIDI.Player.loadFile(this.model.get('midi_blob'), function(){
@@ -15,13 +16,14 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
   });
 
   Show.Question = Marionette.CompositeView.extend({
-    el: '#question',
     template: 'question/view',
     childView: Show.Choice,
     childViewContainer: ".form-group",
+    triggers: {
+        "click .get-next-question" : "question:new",
+    },
     events: {
         "click .submit-answer" : "submit",
-        "click .get-next-question" : "nextQuestion",
     },
     initialize: function(){
         this.collection = null;
@@ -38,7 +40,10 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
                }
             };
         if(!selected){
-            var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Select Something!');
+            var alert = $('<div>')
+                .addClass("alert alert-danger")
+                .attr('role',"alert")
+                .html('Select Something!');
             this.$el.prepend(alert)
         }else{
             this.trigger('question:submit',answered_question);    
@@ -46,20 +51,22 @@ Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $
     },
     onQuestionResult: function(data){ 
       if(data.correct){
-         var alert = $('<div>').addClass("alert alert-success").attr('role',"alert").html('Correct!');
+         var alert = $('<div>')
+                .addClass("alert alert-success")
+                .attr('role',"alert")
+                .html('Correct!');
          this.$el.append(alert)
       }else{
-         var alert = $('<div>').addClass("alert alert-danger").attr('role',"alert").html('Incorrect!');
+         var alert = $('<div>')
+            .addClass("alert alert-danger")
+            .attr('role',"alert")
+            .html('Incorrect!');
          this.$el.append(alert)
       }
       $('.form-group').wrap("<fieldset disabled></fieldset>");
       $('.submit-answer').removeClass("submit-answer").addClass('get-next-question').html('Next Question');
     },
 
-    nextQuestion: function(){
-        event && event.preventDefault(); 
-        this.trigger('question:new');    
-    },
     onQuestionRerender: function(model){
       this.model = model;
       this.initialize();

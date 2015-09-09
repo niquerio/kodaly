@@ -1,2 +1,2 @@
 json.name @user.name
-json.question_factories @question_factories
+json.tests @question_factories
