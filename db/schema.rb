@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150827181644) do
+ActiveRecord::Schema.define(version: 20150911213609) do
 
   create_table "answered_questions", force: :cascade do |t|
     t.integer  "choice_id"
@@ -48,6 +48,19 @@ ActiveRecord::Schema.define(version: 20150827181644) do
   end
 
   add_index "questions", ["question_factory_id"], name: "index_questions_on_question_factory_id"
+
+  create_table "scores", force: :cascade do |t|
+    t.boolean  "complete",            default: false
+    t.integer  "current_streak",      default: 0
+    t.integer  "highest_streak",      default: 0
+    t.integer  "question_factory_id"
+    t.integer  "user_id"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+  end
+
+  add_index "scores", ["question_factory_id"], name: "index_scores_on_question_factory_id"
+  add_index "scores", ["user_id"], name: "index_scores_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"

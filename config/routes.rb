@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
 
   get 'app/check_answer', to: 'answered_questions#create'
+  get 'app/users/:user_id/question_factories/:question_factory_id/score', to: 'scores#show', defaults: {format: :json}
 
 
   resources :sessions, only: [:create, :destroy]
@@ -15,6 +17,8 @@ Rails.application.routes.draw do
   root to: "home#show"
 end
 #Rails.application.routes.draw do
+
+#  get 'scores/show'
 
 #  get 'sessions/create'
 

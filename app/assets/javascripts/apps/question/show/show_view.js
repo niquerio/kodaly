@@ -1,5 +1,20 @@
 Kodaly.module("QuestionApp.Show", function(Show, Kodaly, Backbone, Marionette, $, _){
+  Show.Layout = Marionette.LayoutView.extend({
+    template: "question/layout",
 
+    regions: {
+      questionRegion: "#questionRegion",
+      scoreRegion: "#scoreRegion",
+    },
+  });
+
+  Show.Score = Marionette.ItemView.extend({
+    template: "question/score",
+    onScoreRerender: function(model){
+      this.model = model;
+      this.render();
+    },
+  });
   Show.Choice = Marionette.ItemView.extend({
     className: 'radio-inline',
     events: {
