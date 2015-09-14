@@ -17,6 +17,7 @@ window.Kodaly =  (function(){
     var RootView = Marionette.LayoutView.extend({
       el: "#app-container",
       regions: {
+        header: '[data-region=header]',
         body: '[data-region=body]',
       }
     });

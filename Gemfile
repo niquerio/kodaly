@@ -22,6 +22,10 @@ gem 'backbone-support'
 gem "json2-rails"
 gem 'midilib', '~> 2.0.5'
 gem 'marionette-rails', '~> 2.4.1'
+gem 'devise'
+gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'omniauth-facebook'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -75,5 +79,3 @@ group :test do
   gem "spork", "~> 0.9.0.rc"
 end
 
-gem "omniauth-google-oauth2", "~> 0.2.1"
-gem 'omniauth-facebook'

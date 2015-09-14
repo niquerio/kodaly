@@ -8,6 +8,7 @@ Kodaly.module("Lesson", function(Lesson, Kodaly, Backbone, Marionette, $, _){
   var API = {
     listLessons: function(){
       Lesson.List.Controller.listLessons();
+      Kodaly.execute("set:active:header", "lessons")
     }
   };
 

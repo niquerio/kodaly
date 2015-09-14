@@ -12,13 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree ../../../vendor/assets/javascripts/
 //
 //= require underscore
 //= require json2
 //= require backbone
 //= require backbone-support
 //= require backbone.marionette
+//= require_tree ../../../vendor/assets/javascripts/
 //
 //= require kodaly
 //
