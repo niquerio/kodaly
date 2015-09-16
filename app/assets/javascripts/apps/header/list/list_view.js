@@ -16,9 +16,10 @@ Kodaly.module("HeaderApp.List", function(List, Kodaly, Backbone, Marionette, $, 
     template: "header/composite_view",
     className: "navbar navbar-inverse navbar-fixed-top",
     childView: List.Header,
-    childViewContainer: "ul",
+    childViewContainer: ".links",
     triggers: {
-      "click a.brand" : "brand:clicked",
+      "click a.navbar-brand" : "brand:clicked",
+      "click a.logout" : "logout:clicked",
     }
   });
 });

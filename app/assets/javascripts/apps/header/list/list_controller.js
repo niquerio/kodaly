@@ -7,6 +7,15 @@ Kodaly.module("HeaderApp.List", function(List,Kodaly, Backbone, Marionette, $, _
       headers.on("brand:clicked", function(childView, args){
         Kodaly.trigger("lessons:list");
       });
+      headers.on("logout:clicked", function(childView, args){
+        $.ajax({
+            url: 'users/sign_out',
+            type: 'DELETE',
+            success: function(result) {
+              window.location.replace("./");
+            },
+        });
+      });
       headers.on("childview:navigate", function(childView, args){
         var trigger = args.model.get("navigationTrigger");
         Kodaly.trigger(trigger)

@@ -1,8 +1,20 @@
 Rails.application.routes.draw do
 
-  get 'auth/:provider/callback', to: 'sessions#create'
-  get 'auth/failure', to: redirect('/')
-  get 'signout', to: 'sessions#destroy', as: 'signout'
+  devise_for :users, controllers: {sessions: "users/sessions", registrations: "users/registrations",  :omniauth_callbacks => "users/omniauth_callbacks"}
+  devise_scope :user do
+    match 'sessions/user', to: 'devise/sessions#create', via: :post
+    authenticated :user do
+      root :to => 'home#show', as: :authenticated_root
+    end
+    unauthenticated :user do
+      root :to => 'devise/registrations#new', as: :unauthenticated_root
+    end
+  end
+  root :to => 'devise/registrations#new'
+
+  #get 'auth/:provider/callback', to: 'sessions#create'
+  #get 'auth/failure', to: redirect('/')
+  #get 'signout', to: 'sessions#destroy', as: 'signout'
 
 
   get 'app/check_answer', to: 'answered_questions#create'
@@ -14,15 +26,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show],  defaults: {format: :json}
   resources :question_factories, only: [:show],  defaults: {format: :json}
 
-  root to: "home#show"
 end
-#Rails.application.routes.draw do
-
-#  get 'scores/show'
-
-#  get 'sessions/create'
-
-#  get 'sessions/destroy'
 
 
 

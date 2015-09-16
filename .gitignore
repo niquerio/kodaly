@@ -1,3 +1,7 @@
+#Related to getting email to work
+.env
+Procfile
+
 *.gem
 *.rbc
 /.config
