@@ -25,6 +25,7 @@ gem 'marionette-rails', '~> 2.4.1'
 gem 'devise'
 gem "omniauth-google-oauth2", "~> 0.2.1"
 gem 'omniauth-facebook'
+gem 'font-awesome-rails', '~> 4.4.0.0'
 
 
 # Use jquery as the JavaScript library
