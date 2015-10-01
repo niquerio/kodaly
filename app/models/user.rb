@@ -3,28 +3,36 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook, :google_oauth2]
-  has_many :answered_questions
-  #has_many :question_factories #is this right? I don't think so
 
-  def self.from_omniauth(auth)
-    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-      user.email = auth.info.email
-      user.password = Devise.friendly_token[0,20]
-      user.name = auth.info.name   # assuming the user model has a name
-     # user.image = auth.info.image # assuming the user model has an image
-    end
-  end
+
+def self.from_omniauth(access_token)
+    data = access_token.info
+    user = User.where(:email => data["email"]).first
+
+    # Uncomment the section below if you want users to be created if they don't exist
+     unless user
+         user = User.create(name: data["name"],
+            email: data["email"],
+            password: Devise.friendly_token[0,20],
+            provider: data["provider"],
+         )
+     end
+    user
+end
   #def self.from_omniauth(auth)
-  #  where(provider: auth.provider, uid: auth.uid).first_or_create.tap do |user|
-  #    user.provider = auth.provider
-  #    user.uid = auth.uid
-  #    user.name = auth.info.name
-  #    user.email = autho.info.email
-  #    #user.oauth_token = auth.credentials.token
-  #    #user.oauth_expires_at = Time.at(auth.credentials.expires_at)
-  #    user.save!
+  #  where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+  #    user.email = auth.info.email
+  #    user.password = Devise.friendly_token[0,20]
+  #    user.name = auth.info.name   # assuming the user model has a name
+  #   # user.image = auth.info.image # assuming the user model has an image
   #  end
   #end
 
-
+  #def self.new_with_session(params, session)
+  #  super.tap do |user|
+  #    if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
+  #      user.email = data["email"] if user.email.blank?
+  #    end
+  #  end
+  #end
 end

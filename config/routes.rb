@@ -1,36 +1,15 @@
 Rails.application.routes.draw do
-
-  devise_for :users, controllers: {sessions: "users/sessions", registrations: "users/registrations",  :omniauth_callbacks => "users/omniauth_callbacks"}
-  devise_scope :user do
-    match 'sessions/user', to: 'devise/sessions#create', via: :post
-    authenticated :user do
-      root :to => 'home#show', as: :authenticated_root
-    end
-    unauthenticated :user do
-      root :to => 'devise/registrations#new', as: :unauthenticated_root
-    end
-  end
-  root :to => 'devise/registrations#new'
-
-  #get 'auth/:provider/callback', to: 'sessions#create'
-  #get 'auth/failure', to: redirect('/')
-  #get 'signout', to: 'sessions#destroy', as: 'signout'
-
+  devise_for :users, controllers: {
+        sessions: 'users/sessions',
+        registrations: "users/registrations",  
+        :omniauth_callbacks => "users/omniauth_callbacks"
+      }
+  root to: 'home#show'
 
   get 'app/check_answer', to: 'answered_questions#create'
   get 'app/users/:user_id/question_factories/:question_factory_id/score', to: 'scores#show', defaults: {format: :json}
 
-
-  resources :sessions, only: [:create, :destroy]
-  resource :home, only: [:show]
-  resources :users, only: [:show],  defaults: {format: :json}
   resources :question_factories, only: [:show],  defaults: {format: :json}
-
-end
-
-
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -85,4 +64,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-#end
+end

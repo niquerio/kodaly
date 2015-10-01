@@ -8,7 +8,7 @@
     <%= javascript_include_tag "application"%>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body style="padding-top:60px">
   
   <%= link_to "Kodaly App", root_path, id: "logo", class: "navbar-brand" %>
     <div class="navbar-collapse collapse">
@@ -18,7 +18,7 @@
           <ul class="dropdown-menu">
 
             <li>  <button class="btn btn-block btn-social btn-google"> <i class="fa fa-google"></i> Sign in with Google </button></li>
-            <li>  <button class="btn btn-block btn-social btn-facebook"> <i class="fa fa-facebook"></i> Sign in with Google </button></li>
+            <li>  <button class="btn btn-block btn-social btn-facebook"> <i class="fa fa-facebook"></i> Sign in with Facebook </button></li>
             <li role="separator" class="divider"></li>
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             <li>Sign In</li>
@@ -39,12 +39,7 @@
     </div> 
   </div>
 </div>
-    <% if notice %>
-    <p class="notice alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
 <script type="text/javascript">
   $(function () {
